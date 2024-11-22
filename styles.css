@@ -1,0 +1,81 @@
+/* Загальні стилі */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Темно-сірий фон */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background-color: #555; /* Світло-сірий фон форми */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Вирівнювання по центру */
+}
+
+h1 {
+    text-align: center;
+    color: #ffcc00; /* Жовтий заголовок */
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрування елементів форми */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+    text-align: center; /* Центрування тексту міток */
+}
+
+input {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center; /* Центрування тексту в полях */
+}
+
+input:focus {
+    border-color: #ffcc00;
+    outline: none;
+    background-color: #fff;
+}
+
+button {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
