@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма введення</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="form">
+            <div class="row">
+                <label>Підрозділ:</label>
+                <select id="result">
+                    <option>138 ртбр</option>
+                    <option>96 зрбр</option>
+                    <option>40 брта</option>
+                    <option>119 обр ТРО</option>
+                    <option>638 озкб</option>
+                    <option>631 озкб</option>
+                    <option>156 зрп</option>
+                    <option>110 ак</option>
+                    <option>21 ак</option>
+                    <option>121 ак</option>
+                    <option>ПвК Центр</option>
+                    <option>223 зрп</option>
+                    <option>105 ПрикЗ</option>
+                    <option>ДФТГ</option>                 
+                </select>        
+            </div>
+            <div class="row">
+                <label>Позивний:</label>
+                <input type="text" id="pozivniy">
+            </div>
+            <div class="row">
+                <label>Н.П.:</label>
+                <input type="text" id="naseleniy-punkt">
+            </div>
+            <div class="row">
+                <label>Дата:</label>
+                <input type="date" id="date">
+            </div>
+            <div class="row">
+                <label>Час:</label>
+                <input type="time" id="time">
+            </div>
+            <div class="row">
+                <label>Зброя:</label>
+                <input type="text" id="zbroya">
+            </div>
+            <div class="row">
+                <label>№ цілі:</label>
+                <input type="number" id="target-number">
+            </div>
+            <div class="row">
+                <label>Висота:</label>
+                <input type="number" id="height">
+            </div>
+            <div id="rozxid-container">
+                <div class="rozxid-row">
+                    <label>Розхід:</label>
+                    <select>
+                        <option>Розхід ЗКР</option>
+                        <option>Розхід НБЖ</option>
+                        <option>Набій 20х110 мм (АЗГ М-75, M55) БЗТ</option>
+                        <option>Снаряд 57х348 мм (АЗГ С-60)</option>
+                        <option>Набій 23х152 мм (ЗУ-23-2) ОФЗ</option>
+                        <option>Набій 23х152 мм (ЗУ-23-2) БЗТ</option>
+                        <option>Набій 14,5х114 мм (ЗПУ, КПВТ) Б-32 гл</option>
+                        <option>Набій 14,5х114 мм (ЗПУ, КПВТ) БЗТ гл</option>
+                        <option>Набій 12,7х108 мм (ДШК, НСВ, Корд, W85) МДЗ</option>
+                        <option>Набій 12,7х108 мм (ДШК, НСВ, Корд, W85) БЗТ</option>
+                        <option>Набій 12,7х108 мм (ДШК, НСВ, Корд, W85) Б-32</option>
+                        <option>Набій 12,7х108 мм (ДШК, НСВ, Корд, W85) 1СЛ</option>
+                        <option>Набій 12,7х99 мм (Canik, Browning) (4-M33, 1-M17)</option>
+                        <option>Набій 7,62х54 мм (ПКМ, КМ-7,62, СВД) ЛПС</option>
+                        <option>Набій 7,62х54 мм (ПКМ, КМ-7,62, СВД) Т-46</option>
+                        <option>Набій 7,62х54 мм (ПКМ, КМ-7,62, СВД) Б-32</option>
+                        <option>Набій 7,62х51 мм (CZ TSR, MG3, MG42, FN MAG)</option>
+                        <option>Набій 7,62х39 мм (РКК, РКД, АКМ) ПС</option>
+                        <option>Набій 7,62х39 мм (РКК, РКД, АКМ) Т-45</option>
+                        <option>Набій 5,56х45 мм (FNC) SS109</option>
+                        <option>Набій 5,45х39 мм ПС</option>
+                        <option>Набій 5,45х39 мм Т</option>                
+                    </select>
+                    <input type="number" placeholder="Кількість">
+                    <button type="button" class="delete-btn">Видалити</button>
+                </div>
+            </div>
+            <button type="button" id="add-rozxid" class="btn">Додати розхід</button>
+            <div class="row">
+                <label>Результат:</label>
+                <select id="result">
+                    <option>не застосовувалась</option>
+                    <option>уражено</option>
+                    <option>не уражено</option>
+                </select>
+            </div>
+            <div class="row">
+                <label>Опис:</label>
+                <input type="text" id="Opys">
+            </div>
+                
+            <button type="button" id="copy-btn" class="btn">Скопіювати</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
